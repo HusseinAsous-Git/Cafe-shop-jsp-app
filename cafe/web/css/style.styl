@@ -1,0 +1,305 @@
+/*variable and function and mixin*/
+$gradient = linear-gradient(top ,#ccc,#555)
+auto-text(color)
+    if dark(color)
+        background color
+        color lighten(color , 80%)
+    else 
+        background color
+        color darken(color,80%)
+
+
+/*variable and function and mixin*/ 
+/*global setting*/
+* 
+    padding 0
+    margin 0 
+    box-sizing border-box
+body
+html 
+    // background-color #ccc
+    font-family Arial, Helvetica, sans-serif
+
+.active
+    display block !important
+
+img 
+    outline none
+    width 100%
+    height 100% 
+    border none
+.fl
+    float left 
+
+.fr 
+    float right
+
+.clear-fix
+    content ""
+    display table
+    clear both
+
+.container
+    width 1250px
+    height auto
+    margin 0 auto
+    position relative
+    padding 0
+a
+    border none
+    &:visited
+    &:link
+        color black
+    &:hover
+        opacity 30% 
+    
+/*global setting*/
+/*navigation-section */
+.navigation-section
+    width 100%
+    background #996633
+    overflow hidden
+    padding 20px
+    background url("../images/Background/MenuBackground.jpg") center no-repeat 
+    background-size cover
+    
+    /*logo section */
+.logo-section 
+    width 30%
+   
+//   
+//    #ffab7c
+  
+.logo-image
+    text-align center
+    background-color #eee
+    border-radius 10px 
+    width 90%
+    margin 0 auto
+.logo
+    background-color #f7aa8a
+    display inline-block 
+    backface-visibility visible
+    width 90%
+    height 80px 
+    padding 20px
+    margin 10px auto 
+    background url("../images/logo/1.png") center no-repeat 
+    background-size 100% 80%
+    
+    
+//    background-size 230px 130px
+    /*logo section */
+    /*page-title section */
+.page-title
+//    margin 10px 30px
+    padding 25px 30px
+    width 30%
+    text-align center
+    h3.title
+        font-size 20px
+        padding 10px 
+    .reviewOrder
+        padding  15px 20px
+        font-size 1.2em
+        auto-text(#f7aa8a)
+        opacity 0.7
+        text-align center
+        border-radius 20px
+        border-color transparent
+        font-weight 500
+        transition 0.3s all ease-in-out 
+        &:hover
+            cursor pointer
+            opacity 1
+            transition 0.3s all ease-in-out 
+        &:focus
+            outline none
+     /*page-title section */
+
+/*order-form*/
+.order-form 
+//    margin 10px auto
+    padding 10px 
+    width  40%
+    display block
+    // text-align center
+.form-content
+    float left
+    width : 45%
+    margin auto 2.5%
+    display inline-block
+label 
+   padding 5px
+   margin 15px
+   font-weight 600
+.input
+    display block
+    width 100%
+    padding 10px 5px 
+    margin 15px
+    border-radius 5px
+    border solid 1.5px #eee
+    color #555
+    font-size 1em
+
+/*navigation-section */
+/*sidebar-section*/
+.header
+    width 100px
+    padding 10px 15px
+    auto-text(saturate(#996633))
+    text-align center
+    border-radius 5px
+    margin 10px 
+    font-size 1.2rem
+    opacity  0.8
+    transition 0.3 all ease-in-out
+    &:hover
+        opacity  1.0
+        transition 0.3 all ease-in-out
+    &:focus
+        outline none
+        
+    
+.categories
+    display none
+.sidebar-section
+    width 325px
+    height 652px
+    background $gradient
+    float left
+    position relative
+    background url("../images/Background/MenuBackground.jpg") center no-repeat 
+    // border-radius 5px
+// .overlay
+//     position absolute 
+//     top 0 
+//     bottom 0 
+//     right 0 
+//     left 0
+.category
+    margin 10px 0
+.category-header
+    font-size 18px
+    padding 10px 20px
+    margin 15px auto
+    text-align center
+    width 150px
+    auto-text(#996633)
+    border-radius 10px
+    border solid 1px #996633
+
+.category-item
+    background-color white
+    border  solid 1px black 
+    width 150px
+    margin 5px 20px  
+    padding 7px 15px
+    text-align center
+    border-radius 5px 
+    font-size 1.2rem
+    position relative
+    &:before
+        content ''
+        position absolute
+        z-index 10
+        height 30px
+        width 40px
+        top 3px
+        right 0px
+        background url("../images/arrow.png") center no-repeat
+.hot:after
+    content ''
+    position absolute
+    z-index 10
+    height 30px
+    width 40px
+    top 1px
+    right -60px
+    background url("../images/hot1.png") center no-repeat 
+//        border solid 30px black
+//        background-color black
+        
+.cold:after
+    content ''
+    position absolute
+    z-index 10
+    height 30px
+    width 40px
+    top 1px
+    right -60px
+    background url("../images/cold1.png") center no-repeat 
+/*sidebar-section*/
+/*drinks-section */
+.drinks-section 
+    position relative
+    float left 
+    width 925px
+    background url("../images/Background/MainBackground.jpg") center no-repeat
+    height auto
+    overflow hidden
+/*drinks-section */
+.drinks-item 
+    width 250px
+    height 250px
+    background $gradient
+    border solid 1px $gardient
+    margin 20px 25px
+    float left
+    position relative
+    border solid 1px #996633 
+    
+.item-name
+    width auto
+    padding 10px 12px
+    position absolute
+    top -20px 
+    left 60px
+    auto-text(#996633)
+    border-radius 15px;
+    border solid 1px black
+    margin 5px
+    &:hover
+        cursor default
+.item-price
+    padding 15px 20px
+    position absolute
+    auto-text(#996633)
+    border-radius 5px;
+    border solid 1px black
+    top 15px 
+    right -40px 
+    margin 5px
+    &:hover
+        cursor default
+.customize
+    position absolute
+    padding 8px 10px
+    margin 5px
+    auto-text(#996633)
+    border-radius 5px
+    border solid 1px black
+    bottom 0
+    right 0
+    font-size 1rem
+    &:hover
+        cursor pointer
+.footer
+     background url("../images/Background/MenuBackground.jpg") center no-repeat 
+     background-size cover
+     padding 10px
+     overflow hidden
+.back
+    float right
+    padding 8px 15px
+    margin 5px
+    auto-text(#996633)
+    border-radius 5px
+    border solid 2px saturate(#996633)
+    bottom 0
+    right 0 
+    font-size 1.2rem
+    &:hover
+        cursor pointer
+    

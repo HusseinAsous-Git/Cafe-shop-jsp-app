@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Temprature Cafe</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
+    </head>
+
+    <body>
+        <!-- nav section  -->
+        <div class="container">
+            <nav class="navigation-section">
+
+                <!-- logo Section -->
+                <div class="logo-section fl">
+                    <div class="logo-image">
+                        <div class="logo">
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- order form -->
+                <div class="order-form fl">
+
+                    <p>My Order : <strong id="item-counter"> 0 </strong> item |<strong id="price-counter"> 0  </strong>kd</p>  
+
+
+
+
+                </div>
+                <form action="Third-Page.jsp">
+                    <!-- page-title section -->
+                    <div class="page-title fl">
+                        <input type="submit" class="reviewOrder" value="Review order"/>
+                    </div>
+
+                    <div class="clear-fix"></div>
+
+            </nav>
+        </div>
+
+        <div class="container">
+            <!-- side-bar section  -->
+
+            <div class="sidebar-section">
+
+                <div class="header" >Menu</div>
+                <div class="categories">
+                    <div class="category">
+                        <div class="drinks">
+                            <h4 class="category-header">drinks</h4>
+                            <p class="category-item hot"><span>Hot</span></p>
+                            <p class="category-item cold">cold</p>
+                        </div>
+                    </div>
+                    <div class="categoty">
+                        <div class="dessert">
+                            <h4 class="category-header sweet">Sweets</h4>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="snaks">
+                            <h4 class="category-header light">Light Food</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- drinks section  -->
+
+
+            <div class="hot-drinks-section">
+                <div class="hot-drinks-item">
+
+                    <img src="images/HotCofee/Cappuccino%20(1.500%20KD).jpg" alt="">
+                    <span class="hot-item-name">Cappuccino</span>
+                    <span class="hot-item-price">2 KD</span>
+                    <button type="button" class="customize1">Customize</button>
+                    <button type="button" class="undo1">undo</button>
+                    <input type="number" value="0" class="input1" name="orderCount1" id="orderCount1">
+                    <input type="hidden" value="images/HotCofee/Cappuccino%20(1.500%20KD).jpg" name="imagePath1">
+
+                </div>
+                <div class="hot-drinks-item">
+
+                    <img src="images/HotCofee/Coffe%20Mocha%20(%202.00%20KD)%20.jpg" alt="drink image">
+                    <span class="hot-item-name">coffe Mocha</span>
+                    <span class="hot-item-price">2 KD</span>
+                    <button type="button" class="customize2">Customize</button>
+                    <button type="button" class="undo2">undo</button>
+                    <input type="number" value="0" class="input2" name="orderCount2" id="orderCount2">
+                    <input type="hidden" value="images/HotCofee/Coffe%20Mocha%20(%202.00%20KD)%20.jpg" name="imagePath2">
+                </div>
+                <div class="hot-drinks-item">
+
+                    <img src="images/HotCofee/Espresso%20(1.250%20KD).jpg" alt="drink image">
+                    <span class="hot-item-name">Espresso</span>
+                    <span class="hot-item-price">2 KD</span>
+                    <button type="button" class="customize3">Customize</button>
+                    <button type="button" class="undo3">undo</button>
+                    <input type="number" value="0" class="input3" name="orderCount3" id="orderCount3">
+                    <input type="hidden" value="images/HotCofee/Espresso%20(1.250%20KD).jpg" name="imagePath3">
+                </div>
+                <div class="hot-drinks-item">
+                    <img src="images/HotCofee/Hot%20Chocolate%20(1.250%20KD).jpg" alt="drink image">
+                    <span class="hot-item-name">Hot Chocolate</span>
+                    <span class="hot-item-price">2 KD</span>
+                    <button type="button" class="customize4">Customize</button>
+                    <button type="button" class="undo4">undo</button>
+                    <input type="number" value="0" class="input4" name="orderCount4" id="orderCount4">
+                    <input type="hidden" value="images/HotCofee/Hot%20Chocolate%20(1.250%20KD).jpg" name="imagePath4">
+                </div>
+                <div class="hot-drinks-item">
+
+                    <img src="images/HotCofee/Roze%20Latte%20(1.750).jpg" alt="drink image">
+                    <span class="hot-item-name">Roze Latte</span>
+                    <span class="hot-item-price">2 KD</span>
+                    <button type="button" class="customize5">Customize</button>
+                    <button type="button" class="undo5">undo</button>
+                    <input type="number" value="0" class="input5" name="orderCount5" id="orderCount5">
+                    <input type="hidden" value="images/HotCofee/Roze%20Latte%20(1.750).jpg" name="imagePath5">
+                </div>
+            </div>
+            <div class="cold-drinks-section">
+
+                <div class="cold-drinks-item">
+
+                    <img src="images/ColdCofee/Ice%20Tea%20(1.250%20KD)%20.jpg" alt="" >
+                    <span class="cold-item-name">Ice Tea</span>
+                    <span class="cold-item-price">1.250 KD</span>
+                    <button type="button" class="customize6">Customize</button>
+                    <button type="button" class="undo6">undo</button>
+                    <input type="number" value="0" class="input1" name="orderCount6" id="orderCount6">
+                    <input type="hidden" value="images/ColdCofee/Ice%20Tea%20(1.250%20KD)%20.jpg" name="imagePath6">
+
+                </div>
+                <div class="cold-drinks-item">
+
+                    <img src="images/ColdCofee/Iced%20Cofee%20Americano%20(2.750%20KD).jpg" alt="">
+                    <span class="cold-item-name">Iced Americano</span>
+                    <span class="cold-item-price">2.750 KD</span>
+                    <button type="button" class="customize7">Customize</button>
+                    <button type="button" class="undo7">undo</button>
+                    <input type="number" value="0" class="input2" name="orderCount7" id="orderCount7">
+                    <input type="hidden" value="images/ColdCofee/Iced%20Cofee%20Americano%20(2.750%20KD).jpg" name="imagePath7">
+                </div>
+                <div class="cold-drinks-item">
+                    <img src="images/ColdCofee/Iced%20Roze%20Latte%201.250%20KD).jpg" alt="">
+                    <span class="cold-item-name">Iced Roze Latte</span>
+                    <span class="cold-item-price">1.250 KD</span>    
+                    <button type="button" class="customize8">Customize</button>
+                    <button type="button" class="undo8">undo</button>
+                    <input type="number" value="0" class="input3" name="orderCount8" id="orderCount8">
+                    <input type="hidden" value="images/ColdCofee/Iced%20Roze%20Latte%201.250%20KD).jpg" name="imagePath8">
+                </div>
+                <div class="cold-drinks-item">
+
+                    <img src="images/ColdCofee/White%20Iced%20Mocha%20(1.500%20KD).jpg" alt="">
+                    <span class="cold-item-name">White Iced Mocha</span>
+                    <span class="cold-item-price">1.500 KD</span>
+                    <button type="button" class="customize9">Customize</button>
+                    <button type="button" class="undo9">undo</button>
+                    <input type="number" value="0" class="input4" name="orderCount9" id="orderCount9">
+                    <input type="hidden" value="images/ColdCofee/White%20Iced%20Mocha%20(1.500%20KD).jpg" name="imagePath9">
+                </div>
+            </div> 
+            <div class="sweet-section">
+
+                <div class="sweet-item">
+
+                    <img src="images/Sweet/Almond%20Crossant%20(1.500%20KD).jpg" alt="" >
+                    <span class="sweet-item-name">Almond Crossant</span>
+                    <span class="sweet-item-price">1.500 KD</span>
+                    <button type="button" class="customize10">Customize</button>
+                    <button type="button" class="undo10">undo</button>
+                    <input type="number" value="0" class="input1" name="orderCount10" id="orderCount10">
+                    <input type="hidden" value="images/Sweet/Almond%20Crossant%20(1.500%20KD).jpg" name="imagePath10">
+                </div>
+                <div class="sweet-item">
+
+                    <img src="images/Sweet/Cheese%20%20Cake%20(%202.500%20KD).jpg" alt="">
+                    <span class="sweet-item-name">Cheese Cake</span>
+                    <span class="sweet-item-price">2.500 KD</span>
+                    <button type="button" class="customize11">Customize</button>
+                    <button type="button" class="undo11">undo</button>
+                    <input type="number" value="0" class="input2" name="orderCount11" id="orderCount11">
+                    <input type="hidden" value="images/Sweet/Cheese%20%20Cake%20(%202.500%20KD).jpg" name="imagePath11">
+                </div>
+                <div class="sweet-item">
+                    <img src="images/Sweet/Cookies%20(1.500%20KD).jpg" alt="">
+                    <span class="sweet-item-name">Cookies</span>
+                    <span class="sweet-item-price">1.500 KD</span>
+                    <button type="button" class="customize12">Customize</button>
+                    <button type="button" class="undo12">undo</button>
+                    <input type="number" value="0" class="input3" name="orderCount12" id="orderCount12"> 
+                    <input type="hidden" value="images/Sweet/Cookies%20(1.500%20KD).jpg" name="imagePath12">
+                </div>
+                <div class="sweet-item">
+
+                    <img src="images/Sweet/Oreo%20Brownies%20Cake%20(3.00%20KD).jpg" alt="">
+                    <span class="sweet-item-name">Oreo Brownies Cake</span>
+                    <span class="sweet-item-price">3.00 KD</span>
+                    <button type="button" class="customize13">Customize</button>
+                    <button type="button" class="undo13">undo</button>
+                    <input type="number" value="0" class="input4" name="orderCount13" id="orderCount13">
+                    <input type="hidden" value="images/Sweet/Oreo%20Brownies%20Cake%20(3.00%20KD).jpg" name="imagePath13">
+                </div>
+            </div>
+            <div class="light-food-section">
+
+                <div class="light-food-item">
+
+                    <img src="images/lightFood/Croissant%20(1.750%20KD).jpg" alt="" >
+                    <span class="light-food-item-name">Croissant</span>
+                    <span class="light-food-item-price">1.750 KD</span>
+                    <button type="button" class="customize14">Customize</button>
+                    <button type="button" class="undo14">undo</button>
+                    <input type="number" value="0" class="input1" name="orderCount14" id="orderCount14">
+                    <input type="hidden" value="images/lightFood/Croissant%20(1.750%20KD).jpg" name="imagePath14">
+                </div>
+                <div class="light-food-item">
+
+                    <img src="images/lightFood/Frensh%20Toast%20(2.00%20KD).jpg" alt="">
+                    <span class="light-food-item-name">Frensh Toast</span>
+                    <span class="light-food-item-price">2.00 KD</span>
+                    <button type="button" class="customize15">Customize</button>
+                    <button type="button" class="undo1">undo</button>
+                    <input type="number" value="0" class="input2" name="orderCount15" id="orderCount15">
+                    <input type="hidden" value="images/lightFood/Frensh%20Toast%20(2.00%20KD).jpg" name="imagePath15">
+                </div>
+            </div>
+
+        </form>
+
+
+
+        <div class="clear-fix"></div>
+        <div class="footer">
+            <a href="https://www.youtube.com/watch?v=njmoVYogyA0" class="back">Help</a>
+            <a href="index.html" class="back">Back</a>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
